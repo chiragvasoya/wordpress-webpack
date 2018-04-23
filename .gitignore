@@ -1,0 +1,28 @@
+# Add any directories, files, or patterns you don't want to be tracked by version control
+## General
+.cvs
+.htaccess
+.svn
+*.bak
+*.log
+*.swp
+
+## Windows
+Desktop.ini
+Thumbs.db
+
+## Mac
+.DS_Store
+
+## WordPress
+*.jpg
+*.ttf
+*.eot
+*.woff
+*.png
+*.svg
+src/images
+src/fonts
+
+## Development
+node_modules

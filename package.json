@@ -1,0 +1,33 @@
+{
+  "name": "wordpress-webpack",
+  "version": "1.0.0",
+  "description": "Wordpress quick-start with webpack automation",
+  "main": "index.js",
+  "repository": "https://github.com/chiragvasoya/wordpress-webpack.git",
+  "author": "Chirag Vasoya",
+  "scripts": {
+    "build": "webpack -d --watch",
+    "prod": "webpack -p"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "browser-sync": "^2.23.6",
+    "browser-sync-webpack-plugin": "^1.2.0",
+    "clean-webpack-plugin": "^0.1.16",
+    "css-loader": "^0.28.4",
+    "exports-loader": "^0.6.4",
+    "extract-text-webpack-plugin": "^3.0.0",
+    "file-loader": "^1.1.5",
+    "image-webpack-loader": "^4.0.0",
+    "node-sass": "^4.7.2",
+    "sass-loader": "^6.0.6",
+    "style-loader": "^0.20.1",
+    "url-loader": "^0.6.2",
+    "webpack": "^3.10.0"
+  },
+  "dependencies": {
+    "bootstrap": "^4.0.0",
+    "jquery": "^3.2.1",
+    "popper.js": "^1.12.9"
+  }
+}
