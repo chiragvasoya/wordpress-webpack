@@ -37,7 +37,7 @@ module.exports = {
                     name: '[path][name].[ext]'
                  }
                 },
-                ]   
+              ]   
            },
            {
                test: /\.(woff2?|svg)$/,
