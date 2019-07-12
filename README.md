@@ -17,7 +17,7 @@ Wordpress quick-start with webpack automation uses node.js, yarn and webpack to 
 * In webpack.config.js change the dir url inside BrowserSyncPlugin (proxy: 'http://localhost/yourdir')
 * In src/js/app.js file change the css/scss and javascript file dir
 * Confirm functions.php file changes
-* In terminal type 'yarn run build' to start compiling
-* Use 'yarn run prod' for production ready files
+* In terminal type 'yarn run start' to start compiling
+* Use 'yarn run build' for production ready files
 
 
