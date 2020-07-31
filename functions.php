@@ -13,9 +13,6 @@ function ilc_custom_login() {
   <script type="text/javascript">window.onload = function(){document.getElementById("login").getElementsByTagName("a")[0].href = "'. home_url() . '";document.getElementById("login").getElementsByTagName("a")[0].title = "Go to site";}</script>';
 }
 
-
-
-
 function register_themename_menus(){
 	register_nav_menus(
 		array(
@@ -25,9 +22,6 @@ function register_themename_menus(){
 		 );
 }
 add_action( 'init', 'register_themename_menus');
-
-
-
 
 /*************************     Styles and JavaScript files  *********************/
 function themename_enqueue_styles() {
@@ -40,12 +34,7 @@ function themename_enqueue_scripts() {
     wp_enqueue_script('bundlejs', get_template_directory_uri().'/dist/bundle.js', $dependencies, '', true );
 }
  
-
 add_action( 'wp_enqueue_scripts', 'themename_enqueue_scripts' );
-
-
-
-
 
 /***********************   Image Thumbnails       ********************************/
 if(function_exists('add_theme_support')){
@@ -53,12 +42,9 @@ if(function_exists('add_theme_support')){
 	set_post_thumbnail_size(538, 269);
 }
 
-
-
 if(function_exists('add_image_size')){
 	add_image_size('slider-image', 768, 255); //adjust name and image size accordingly
 	
 }
-
 
 ?>
