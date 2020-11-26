@@ -2,7 +2,7 @@ const webpack = require('webpack');
 const path = require('path');
 var BrowserSyncPlugin = require('browser-sync-webpack-plugin');
 const  { CleanWebpackPlugin } = require('clean-webpack-plugin');
-var MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 
 module.exports = {
@@ -18,9 +18,9 @@ module.exports = {
                use: [
                 {
                   loader: MiniCssExtractPlugin.loader,
-                  options: {
-                    hmr: process.env.NODE_ENV === 'development',
-                  },
+                  // options: {
+                  //   hmr: process.env.NODE_ENV === 'development',
+                  // },
                 },
                 'css-loader',
                 'sass-loader',
